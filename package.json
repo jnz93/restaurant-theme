@@ -4,6 +4,7 @@
   "description": "Versão inicial do projeto restaurant theme",
   "main": "index.js",
   "dependencies": {
+    "fast-git-changelog": "^1.0.0",
     "gulp": "^4.0.2"
   },
   "devDependencies": {
