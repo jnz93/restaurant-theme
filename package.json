@@ -1,0 +1,17 @@
+{
+  "name": "restaurant-theme",
+  "version": "0.1.0",
+  "description": "Versão inicial do projeto restaurant theme",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ja93",
+  "license": "ISC"
+}
