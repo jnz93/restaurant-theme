@@ -1,6 +1,6 @@
 <?php 
 /**
- * The search results template is used to display a visitor’s search results.
+ * The category template is used when visitors request posts by category.
  * 
  * @link https://developer.wordpress.org/themes/basics/template-files/
  *
