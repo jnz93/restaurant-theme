@@ -10,9 +10,9 @@ add_action('init', 'create_custom_post_types');
 function create_custom_post_types()
 {
     /**
-     * Post type: Cardápio
+     * Post type: menu
      */
-    register_post_type(PREFIX . 'cardapio', array(
+    register_post_type(PREFIX . 'menu', array(
         'labels'            => array(
             'name'          => __('Cardápio', 'TEXT_DOMAIN'),
             'singular_name' => __('Cardápio', 'TEXT_DOMAIN'),
@@ -34,14 +34,59 @@ function create_custom_post_types()
         ),
         'public'            => true,
         'menu_position'     => '2',
-        'menu_icon'         => 'dashicons-menu-alt3'
+        'menu_icon'         => 'dashicons-cart'
+    ));
+
+    /**
+     * Post type: orders
+     */
+    register_post_type(PREFIX . 'orders', array(
+        'labels'            => array(
+            'name'          => __('Pedidos', 'TEXT_DOMAIN'),
+            'singular_name' => __('Pedido', 'TEXT_DOMAIN'),
+            'add_new'       => __('Adicionar novo pedido', 'TEXT_DOMAIN'),
+            'add_new_item'  => __('Criar novo pedido', 'TEXT_DOMAIN'),
+            'edit_item'     => __('Editar pedido', 'TEXT_DOMAIN'),
+            'new_item'      => __('Novo pedido', 'TEXT_DOMAIN'),
+            'view_item'     => __('Visualizar pedido', 'TEXT_DOMAIN'),
+            'menu_name'     => __('Pedidos', 'TEXT_DOMAIN')
+        ),
+        'description'       => __('Adicione, edite e remova pedidos.', 'TEXT_DOMAIN'),
+        'supports'          => array(
+            'title',
+            'editor',
+            'author',
+            'revisions',
+            'excerpt'
+        ),
+        'public'            => true,
+        'menu_position'     => '3',
+        'menu_icon'         => 'dashicons-editor-ul'
+    ));
+
+    /**
+     * Post type: differentials
+     */
+    register_post_type(PREFIX . 'differentials', array(
+        'labels'            => array(
+            'name'          => __('Diferenciais', 'TEXT_DOMAIN'),
+            'singular_name' => __('Diferencial', 'TEXT_DOMAIN'),
+            'add_new'       => __('Adicionar novo diferencial', 'TEXT_DOMAIN'),
+            'add_new_item'  => __('Adicionar diferencial', 'TEXT_DOMAIN'),
+            'edit_item'     => __('Editar diferencial', 'TEXT_DOMAIN'),
+            'new_item'      => __('Novo diferencial', 'TEXT_DOMAIN'),
+            'view_item'     => __('Visualizar diferencial', 'TEXT_DOMAIN'),
+            'menu_name'     => __('Diferenciais', 'TEXT_DOMAIN')
+        ),
+        'description'       => __('Adicionar diferenciais competitivos da empresa em relação aos concorrentes', 'TEXT_DOMAIN'),
+        'supports'          => array(
+            'title',
+            'excerpt',
+            'thumbnail',
+            'author'
+        ),
+        'public'            => true,
+        'menu_position'     => '4',
+        'menu_icon'         => 'dashicons-awards'
     ));
 };
-
-
-
-// É a definição para adição de comidas, lanches, bebidas e serviços oferecidos pelo restaurante. Sendo que os produtos cadastrados no cardápio serão categorizados por tipos(Pizza, lanche, bebida alcoolica, refrigerante, pratos) e teremos também subcategorias/tags;
-// Exemplo: X-Bacon > lanche - Pizza de calabresa > pizza - Sopa de frango > prato/sopa - Coca-cola > refrigerante
-// Campos: Nome/Titulo, Descrição, sabor(es), Igredientes, tamanhos, peso, preço, tempo de preparo; 
-// Categorias: Pizzas, Lanches, Massas, Bebidas, Entradas, Sobremesas (Categorias devem ser Hierarquicas para receber as subcategorias)
-// Subcategorias:  Tipos de pizzas, tipos de lanches, tipos de bebidas, tipos de entradas, tipos de sobremesas

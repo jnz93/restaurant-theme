@@ -92,3 +92,4 @@ if (!function_exists('restaurant_setup'))
  */
 require get_template_directory() . '/inc/template-register-post-types.php';
 require get_template_directory() . '/inc/template-register-taxonomies.php';
+require get_template_directory() . '/inc/template-metaboxes.php';
