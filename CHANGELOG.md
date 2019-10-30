@@ -1,6 +1,10 @@
 CHANGELOG
 ====
 
+`v0.3.0` 30/10/2019 19:24
+----
+ * Criação das estruturas básicas dos arquivos - Final.
+
 `v0.3.0` 29/10/2019 20:58
 ----
  * Primeira parte da criação das estruturas básicas dos arquivos.
