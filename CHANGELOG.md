@@ -1,6 +1,10 @@
 CHANGELOG
 ====
 
+`v0.3.0` 29/10/2019 20:58
+----
+ * Primeira parte da criação das estruturas básicas dos arquivos.
+
 `v0.2.0` 28/10/2019 22:02
 ----
  * Feat: Add post-types, add metaboxes and taxonomies.
