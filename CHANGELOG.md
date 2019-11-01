@@ -1,12 +1,13 @@
 CHANGELOG
 ====
 
+`v0.4.0` 30/10/2019 22:20
+----
+ * Feat: add arquivos e primeira parte da estrutura dos templates-parts.
+
 `v0.3.0` 30/10/2019 19:24
 ----
  * Criação das estruturas básicas dos arquivos - Final.
-
-`v0.3.0` 29/10/2019 20:58
-----
  * Primeira parte da criação das estruturas básicas dos arquivos.
 
 `v0.2.0` 28/10/2019 22:02
