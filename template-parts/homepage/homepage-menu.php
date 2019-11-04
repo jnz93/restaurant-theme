@@ -52,12 +52,20 @@
     $query_menu     = new WP_Query($args);
 
     if ($query_menu->have_posts()) :
-        echo '<h4 class="entry-title">'. __('Selecionamos '. $posts_per_page .' para você!', 'TEXT_DOMAIN') . '</h4>';
-
+        // echo '<h4 class="entry-title">'. __('Selecionamos '. $query_menu->post_count .' para você!', 'TEXT_DOMAIN') . '</h4>';
+        ?>
+        <div class="">
+            <h4 class="entry-title"><?php __('Selecionamos '. $query_menu->post_count .' para você!', 'TEXT_DOMAIN') ?></h4>
+            <div class="box__search">
+                <input type="text" name="" id="" class="" placeholder="Busque por nome, sabor, ou ID"><button class="">Search</button>
+            </div>
+            <button class="">Filter</button>
+        </div>
+        <?php
         while ($query_menu->have_posts()) :
             
             $query_menu->the_post();
-            get_template_part('template-parts/content/content', 'card-menu');
+            get_template_part('template-parts/content/content', 'card_menu');
 
         endwhile;
     else :

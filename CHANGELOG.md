@@ -1,8 +1,12 @@
 CHANGELOG
 ====
 
-`v0.4.0` 30/10/2019 22:20
+`v0.4.0` 01/11/2019 21:51
 ----
+ * Construção das estruturas iniciais das seções homepage.
+ * Fix syntax error.
+ * Estrutura inicial da front-page custom.
+ * Feat: Estruturas básicas header e footer widgets.
  * Feat: add arquivos e primeira parte da estrutura dos templates-parts.
 
 `v0.3.0` 30/10/2019 19:24

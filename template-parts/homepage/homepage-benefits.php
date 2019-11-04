@@ -28,7 +28,7 @@
         while ($query_differentials->have_posts()) :
 
             $query_differentials->the_post();
-            get_template_part('template-parts/content/content', 'differential'); // Criar template
+            get_template_part('template-parts/content/content', 'card_differential'); // Criar template
 
         endwhile;
 
