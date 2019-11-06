@@ -1,8 +1,9 @@
 CHANGELOG
 ====
 
-`v0.4.0` 01/11/2019 21:51
+`v0.4.0` 04/11/2019 21:42
 ----
+ * Feat: Fix em estruturas já feitas e adição de novos templates.
  * Construção das estruturas iniciais das seções homepage.
  * Fix syntax error.
  * Estrutura inicial da front-page custom.
